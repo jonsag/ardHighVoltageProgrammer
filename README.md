@@ -1,4 +1,4 @@
-# ardHighVoltage Programmer
+# ardHighVoltageProgrammer
 
 ## Links
 
