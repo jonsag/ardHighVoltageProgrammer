@@ -1,0 +1,32 @@
+{
+    "cSpell.words": [
+        "Amplificar",
+        "ARDUINOISP",
+        "AVCC",
+        "Bohn",
+        "CHIPERASE",
+        "EECHUNK",
+        "eeprompoll",
+        "eepromsize",
+        "flashpoll",
+        "flashsize",
+        "FUSERESCUE",
+        "hbdelta",
+        "hbval",
+        "hilo",
+        "HWVER",
+        "ISPFUSERESCUE",
+        "LEXDEFINE",
+        "Mellis",
+        "parmode",
+        "RDYBSY",
+        "READFUSE",
+        "SPCR",
+        "SPDR",
+        "SPIF",
+        "SPSR",
+        "SWMAJ",
+        "SWMIN",
+        "WRITEFUSE"
+    ]
+}

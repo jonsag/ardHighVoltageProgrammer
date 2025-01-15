@@ -2,6 +2,18 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "ISP_FuseRescue-pio",
+			"path": "ISP_FuseRescue-pio"
+		},
+		{
+			"name": "ardHighVoltageProgrammer-pio",
+			"path": "ardHighVoltageProgrammer-pio"
+		},
+		{
+			"name": "avrHVRescueShield2-pio",
+			"path": "avrHVRescueShield2-pio"
 		}
 	],
 	"settings": {}
