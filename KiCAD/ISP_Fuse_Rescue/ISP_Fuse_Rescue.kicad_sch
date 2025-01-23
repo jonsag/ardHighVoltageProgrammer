@@ -295,6 +295,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "My_Arduino-Library:Arduino_Uno_R3_Shield"
 			(pin_names
 				(offset 1.016)
@@ -3687,7 +3769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 200.152 119.38 90)
 			(effects
 				(font
@@ -3730,6 +3812,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 111.76 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13a7e1a0-812d-4213-9515-1eef8603bdaf")
+		(property "Reference" "H3"
+			(at 114.3 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 114.3 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 111.76 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 111.76 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ISP_Fuse_Rescue"
+				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 133.35 119.38 0)
 		(unit 1)
@@ -3757,7 +3903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 131.572 119.38 90)
 			(effects
 				(font
@@ -3809,7 +3955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bd11b49-f2a0-4507-b321-62260063856d")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 50.8 62.23 0)
 			(effects
 				(font
@@ -3817,7 +3963,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "Reset"
 			(at 50.8 64.77 0)
 			(effects
 				(font
@@ -3825,7 +3971,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:SW_PUSH_6mm_large"
 			(at 50.8 64.77 0)
 			(effects
 				(font
@@ -3861,7 +4007,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3895,7 +4041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "My_Misc:TO-92_Inline_Wide_large"
 			(at 56.134 128.27 0)
 			(effects
 				(font
@@ -3971,7 +4117,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 51.562 160.02 90)
 			(effects
 				(font
@@ -4089,7 +4235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49bba769-93cc-4a1f-a677-1e942d7fe87a")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR03"
 			(at 53.34 50.8 0)
 			(effects
 				(font
@@ -4139,7 +4285,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR07")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4155,7 +4301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f6e4530-fb9e-4de5-bb63-599b953a064f")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 53.34 190.5 0)
 			(effects
 				(font
@@ -4205,7 +4351,7 @@
 		(instances
 			(project "ISP_Fuse_Rescue"
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4239,7 +4385,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 201.93 132.08 0)
 			(effects
 				(font
@@ -4307,7 +4453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_arduino-library:Arduino_Uno_R3_Shield"
+		(property "Footprint" "My_Arduino:Arduino_UNO_R3_shield_incl ICSP_headers_large"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -4455,6 +4601,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 111.76 170.18 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "640c2164-8fa0-4b90-8358-435ebd0f62f2")
+		(property "Reference" "H2"
+			(at 114.3 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 114.3 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 111.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 111.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ISP_Fuse_Rescue"
+				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 179.07 119.38 0)
 		(unit 1)
@@ -4482,7 +4692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 177.292 119.38 90)
 			(effects
 				(font
@@ -4552,7 +4762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "My_Misc:TO-92_Inline_Wide_large"
 			(at 56.134 177.8 0)
 			(effects
 				(font
@@ -4610,7 +4820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7977201a-bb58-45d2-aae6-a3b437e5cdbc")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR08"
 			(at 133.35 114.3 0)
 			(effects
 				(font
@@ -4660,7 +4870,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4676,7 +4886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aeae767-5e13-42fe-afbe-0d9ba4d82ff4")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 133.35 147.32 0)
 			(effects
 				(font
@@ -4726,7 +4936,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4742,7 +4952,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86c94290-aa7a-4e52-925a-7452a3b0acc6")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 55.88 109.2199 0)
 			(effects
 				(font
@@ -4760,7 +4970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 51.562 110.49 90)
 			(effects
 				(font
@@ -4796,7 +5006,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4812,7 +5022,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87cca223-21a5-4c40-9078-0924d8292597")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 36.83 118.11 90)
 			(effects
 				(font
@@ -4828,7 +5038,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 36.83 126.238 90)
 			(effects
 				(font
@@ -4864,7 +5074,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4898,7 +5108,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 156.21 132.08 0)
 			(effects
 				(font
@@ -4941,6 +5151,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 111.76 180.34 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a921348-48e3-4275-82d0-59f50a259e92")
+		(property "Reference" "H4"
+			(at 114.3 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 114.3 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 111.76 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 111.76 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ISP_Fuse_Rescue"
+				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 36.83 173.99 90)
 		(unit 1)
@@ -4950,7 +5224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2c80eec-5ef9-41c6-894e-71a4373c1cc4")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 36.83 167.64 90)
 			(effects
 				(font
@@ -4966,7 +5240,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 36.83 175.768 90)
 			(effects
 				(font
@@ -5002,7 +5276,71 @@
 		(instances
 			(project "ISP_Fuse_Rescue"
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "R3")
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 111.76 165.1 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa66a856-e9ad-4208-af57-cdbe1cd9da0a")
+		(property "Reference" "H1"
+			(at 114.3 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 114.3 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 111.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 111.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -5018,7 +5356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b82114ec-f681-49fc-ac07-dcf3f748837e")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 53.34 154.94 0)
 			(effects
 				(font
@@ -5068,7 +5406,7 @@
 		(instances
 			(project "ISP_Fuse_Rescue"
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5168,7 +5506,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 179.07 132.08 0)
 			(effects
 				(font
@@ -5238,7 +5576,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 154.432 119.38 90)
 			(effects
 				(font
@@ -5290,7 +5628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5de9d0f-34ca-469b-81d5-c5ea5fc52784")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR05"
 			(at 53.34 140.97 0)
 			(effects
 				(font
@@ -5340,7 +5678,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR02")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5356,7 +5694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e643c2df-7a32-447e-9567-464af73a02ac")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 53.34 33.02 0)
 			(effects
 				(font
@@ -5406,7 +5744,7 @@
 		(instances
 			(project ""
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5440,7 +5778,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 68.58 173.99 0)
 			(effects
 				(font
@@ -5510,7 +5848,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 133.35 132.08 0)
 			(effects
 				(font
@@ -5646,7 +5984,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:LED_D5.0mm_large"
 			(at 68.58 124.46 0)
 			(effects
 				(font
@@ -5689,7 +6027,7 @@
 		)
 	)
 	(sheet
-		(at 119.38 167.64)
+		(at 254 113.03)
 		(size 21.59 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -5701,7 +6039,7 @@
 		)
 		(uuid "4b5fef83-089d-4da9-87fb-7c4915d0db44")
 		(property "Sheetname" "Logic"
-			(at 119.38 166.9284 0)
+			(at 254 112.3184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +6048,7 @@
 			)
 		)
 		(property "Sheetfile" "Logic.kicad_sch"
-			(at 119.38 178.3846 0)
+			(at 254 123.7746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5719,7 +6057,7 @@
 			)
 		)
 		(property "Field2" ""
-			(at 119.38 167.64 0)
+			(at 254 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +6074,7 @@
 		)
 	)
 	(sheet
-		(at 148.59 167.64)
+		(at 254 132.08)
 		(size 21.59 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -5748,7 +6086,7 @@
 		)
 		(uuid "8b5d2fc4-3fb4-40cc-82b3-0bbde1ce2182")
 		(property "Sheetname" "High Voltage"
-			(at 148.59 166.9284 0)
+			(at 254 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5757,7 +6095,7 @@
 			)
 		)
 		(property "Sheetfile" "high_voltage.kicad_sch"
-			(at 148.59 178.3846 0)
+			(at 254 142.8246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5769,6 +6107,44 @@
 			(project "ISP_Fuse_Rescue"
 				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 149.86)
+		(size 21.59 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "91560231-b999-4350-b752-795143ffc6e9")
+		(property "Sheetname" "ATMega328P"
+			(at 254 149.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "atmega328p.kicad_sch"
+			(at 254 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ISP_Fuse_Rescue"
+				(path "/96b1503a-8cc5-439b-8b68-5776318701e8"
+					(page "4")
 				)
 			)
 		)
