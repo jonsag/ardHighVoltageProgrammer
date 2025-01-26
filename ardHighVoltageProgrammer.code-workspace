@@ -16,5 +16,9 @@
 			"path": "avrHVRescueShield2-pio"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"Hzatmega"
+		]
+	}
 }
