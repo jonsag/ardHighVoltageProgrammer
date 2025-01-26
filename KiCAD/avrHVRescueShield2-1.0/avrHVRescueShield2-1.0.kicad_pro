@@ -108,10 +108,9 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
+        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
@@ -439,14 +438,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ardHighVoltageProgrammer.kicad_pro",
+    "filename": "avrHVRescueShield2-1.0.kicad_pro",
     "version": 1
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.762,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -456,9 +455,9 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.508,
-        "via_diameter": 2.032,
-        "via_drill": 0.508,
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -594,7 +593,7 @@
   },
   "sheets": [
     [
-      "8dc3074d-9209-4635-bca5-6f2a47a2c27f",
+      "14c92c9b-1455-42e4-96b0-3ddf5d5ed612",
       "Root"
     ]
   ],
